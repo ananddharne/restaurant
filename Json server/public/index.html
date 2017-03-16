@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="confusionApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head 
+         content must come *after* these tags -->
+    
+    <title>Ristorante Con Fusion</title>    
+        <!-- Bootstrap -->
+<!-- build:css styles/main.css -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    
+    <!-- <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet"> -->
+    <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"> -->
+    
+    <link href="styles/bootstrap-social.css" rel="stylesheet">
+    <link href="styles/mystyles.css" rel="stylesheet">
+
+
+    <style type="text/css">
+            .row-content
+            {
+                min-height: 300px !important ;
+            }
+    </style>
+
+</head>
+
+<body>
+    
+
+    <!-- <ng-include src="'menu.html'" ></ng-include> -->
+    <!-- Using UI-View instead of ng-view -->
+    <!-- <ng-view></ng-view> -->
+    <!-- ng-view does not support multiple views ! okay but UI-router supports multiple views ! -->
+
+    <div ui-view="header"></div>
+    <div ui-view="content"></div>
+    <div ui-view="footer"></div>
+
+    
+  
+<!-- build:js scripts/main.js -->
+    <script src="node_modules/angular/angular.min.js"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> -->
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <script src="node_modules/angular-resource/angular-resource.min.js"></script>
+    <!-- <script src="../bower_components/angular-route/angular-route.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script> -->
+    
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/controllers.js"></script>
+    <script src="scripts/services.js"></script>
+<!-- endbuild -->
+
+</body>
+
+</html>
